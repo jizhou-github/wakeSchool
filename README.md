@@ -1,10 +1,11 @@
-# WakeSchool (MATLAB App) — Hydrodynamics-aware Agent-Based Fish Schooling Model
+# WakeSchool (MATLAB App) — Agent-Based Fish Schooling Model Coupling Realtime Hydrodynamics
 
 WakeSchool is a **MATLAB App Designer** interface for an agent-based fish schooling simulator that couples:
 - **Social/behavioral interaction rules** (agent-based model), and
 - **Hydrodynamic interactions**, including **wake effects** (and optional potential-flow effects).
 
-This repository is currently a **preliminary public release**. Several UI options are intentionally **disabled at runtime** (e.g., in `RunButtonPushed`) because those functions are not fully validated yet. I am sharing the app early to make it easier for others to test, give feedback, and help shape the next development steps.
+  
+This repository is currently a **preliminary public release**. Several UI options are intentionally **disabled at runtime** (e.g., in `Save & Replay`) because those functions are not fully validated yet. I am sharing the app early to make it easier for others to test, give feedback, and help shape the next development steps.
 
 ---
 
@@ -25,7 +26,7 @@ If you use this code in your work, please cite the paper above.
 
 ### What works today
 - Launching and running the simulator via the MATLAB App
-- Fish motion visualization in a bounded domain (including a circular tank option)
+- Fish motion visualization in periodic or bounded domain (including a circular tank option)
 - Realtime statistics plotting (e.g., speed, nearest-neighbor distance, polarization) depending on toggles
 - Wake visualization options (when enabled) consistent with the current implementation
 
@@ -50,7 +51,7 @@ The goal is to provide a Python implementation with the same core model logic an
 1. Install MATLAB with **App Designer**.
 2. Clone this repository:
    ```bash
-   git clone <this-repo-url>
+   git clone <https://github.com/jizhou-github/wakeSchool>
    ```
 3. Open the `.mlapp` file in MATLAB (App Designer) and click **Run**.
 4. Use the **Setup / Display / Fish / Save & Replay** tabs to configure a run.
@@ -93,4 +94,4 @@ This code is provided as-is for research and educational use. Some components ar
 
 ## License
 
-(Add your license here — e.g., MIT / BSD-3 / GPL-3 — once you decide what you want to use. It is also recommended to include a separate `LICENSE` file in the repository.)
+MIT
