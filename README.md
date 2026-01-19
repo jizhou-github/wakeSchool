@@ -4,9 +4,12 @@ WakeSchool is a **MATLAB App Designer** interface for an agent-based fish school
 - **Social/behavioral interaction rules** (agent-based model), and
 - **Hydrodynamic interactions**, including **wake effects** (and optional potential-flow effects).
 
-  
+Please _**Watch**_ 👀 and _**Star**_ 🌟 to keep updated!! Thank you~ 
+
 This repository is currently a **preliminary public release**. Several UI options are intentionally **disabled at runtime** (e.g., in `Save & Replay`) because those functions are not fully validated yet. I am sharing the app early to make it easier for others to test, give feedback, and help shape the next development steps.
 
+## Quick Start
+0. You can directly download the **wakeSchool_noColorPicker.mltbx** and drag into your Matlab. (If you have the newest version, 2025b, you can download **wakeSchool.mltbx** as well, as only the newer versions of Matlab have _colorPicker_ feature).
 ---
 
 ## Reference (Paper + PDF included in this repo)
@@ -48,18 +51,15 @@ The goal is to provide a Python implementation with the same core model logic an
 
 ## Getting started
 
-1. Install MATLAB with **App Designer**.
-2. Clone this repository:
+0. You can directly download the **wakeSchool_noColorPicker.mltbx** and drag into your Matlab. (If you have the newest version, 2025b, you can download **wakeSchool.mltbx** as well, as only the newer versions of Matlab have _colorPicker_ feature).
+  
+To keep fish model updated through GitHub, do the following steps:
+1. Clone this repository:
    ```bash
    git clone <https://github.com/jizhou-github/wakeSchool>
    ```
-3. Open the `.mlapp` file in MATLAB (App Designer) and click **Run**.
-4. Use the **Setup / Display / Fish / Save & Replay** tabs to configure a run.
-
-Notes:
-- If you see name conflicts or path-related issues, try starting from a clean MATLAB path (`restoredefaultpath; rehash toolboxcache;`) and then add this repo folder.
-- This is research code under active development; behavior may change between commits.
-
+2. Open the `.mltbx` file in MATLAB (App Designer) and click **Run**.
+3. Use the **Setup / Display / Fish / Save & Replay** tabs to configure a run.
 ---
 
 ## Issues, feature requests, and collaborations
@@ -68,6 +68,7 @@ Feedback is welcome and encouraged.
 
 - Please use **GitHub Issues** to report bugs, request new features, or suggest improvements.
 - New feature requests are welcome (including new species presets, new statistics, new interaction rules, replay/export workflows, etc.).
+- You can also send questions or issues to my email directly, **jzhou96@jhu.edu.**
 - I am also open to **potential collaborations** (model development, validation against experiments, extensions to new species, etc.). If you have an idea, feel free to reach out.
 
 ---
